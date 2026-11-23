@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing Plans</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<section class="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <h2 id="pricing-title">Simple pricing for every team</h2>
+    <p class="lead">Pick a plan, switch to yearly billing and save about 20 percent.</p>
+
+    <div class="toggle" role="group" aria-label="Billing period">
+      <button type="button" id="monthly" aria-pressed="true" class="active">Monthly</button>
+      <button type="button" id="yearly" aria-pressed="false">Yearly <span class="save">Save 20%</span></button>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Starter</h3>
+        <p class="who">For people just getting going</p>
+        <p class="amount"><span class="currency">₹</span><span class="price" data-monthly="499" data-yearly="4790">499</span></p>
+        <p class="unit">per month</p>
+        <p class="note">Billed monthly</p>
+        <ul>
+          <li>1 workspace</li>
+          <li>Up to 3 team members</li>
+          <li>5 GB storage</li>
+          <li>Basic reports</li>
+          <li>Email support</li>
+        </ul>
+        <button type="button" class="cta">Choose Starter</button>
+      </article>
+
+      <article class="card popular">
+        <span class="ribbon ribbon-popular">Popular</span>
+        <h3>Pro</h3>
+        <p class="who">For growing teams that ship often</p>
+        <p class="amount"><span class="currency">₹</span><span class="price" data-monthly="999" data-yearly="9590">999</span></p>
+        <p class="unit">per month</p>
+        <p class="note">Billed monthly</p>
+        <ul>
+          <li>10 workspaces</li>
+          <li>Up to 15 team members</li>
+          <li>100 GB storage</li>
+          <li>Advanced reports</li>
+          <li>Priority chat support</li>
+        </ul>
+        <button type="button" class="cta cta-main">Choose Pro</button>
+      </article>
+
+      <article class="card">
+        <span class="ribbon ribbon-value">Best Value</span>
+        <h3>Team</h3>
+        <p class="who">For companies with many projects</p>
+        <p class="amount"><span class="currency">₹</span><span class="price" data-monthly="1999" data-yearly="19190">1,999</span></p>
+        <p class="unit">per month</p>
+        <p class="note">Billed monthly</p>
+        <ul>
+          <li>Unlimited workspaces</li>
+          <li>Up to 50 team members</li>
+          <li>1 TB storage</li>
+          <li>Custom reports</li>
+          <li>Phone and chat support</li>
+        </ul>
+        <button type="button" class="cta">Choose Team</button>
+      </article>
+    </div>
+    <p class="fine">All prices are made up for this demo.</p>
+  </div>
+</section>
+</body>
+</html>
